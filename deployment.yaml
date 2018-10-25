@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: springboot-docker
+  namespace: default
+  labels:
+    app: springboot-docker
+spec:
+  clusterIP: None
+  selector:
+    app: springboot-docker
+  sessionAffinity: None
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-docker
+  namespace: default
+  labels:
+    app: springboot-docker
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: springboot-docker
+  template:
+    metadata:
+      labels:
+        app: springboot-docker
+    spec:
+      containers:
+      - name: springboot-docker
+        imagePullPolicy: Always
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
