@@ -16,7 +16,7 @@ stages:
       registry: 192.168.144.132
     env:
       PLUGIN_DEBUG: true
-      PLUGIN_INSECURE: true
+      PLUGIN_INSECURE: 192.168.144.132
       PLUGIN_MIRROR: https://mrpxuz76.mirror.aliyuncs.com
     when:
       event: {}
