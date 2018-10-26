@@ -2,7 +2,7 @@ stages:
 - name: maven package
   steps:
   - runScriptConfig:
-      image: 192.168.124.132/base/maven-aliyun:3.5.4-jdk-8-alpine
+      image: 192.168.144.132/base/maven-aliyun:3.5.4-jdk-8-alpine
       shellScript: mvn clean package -Dmaven.test.skip=true
   when:
     event: {}
@@ -13,7 +13,7 @@ stages:
       buildContext: .
       tag: b2b/springboot-docker:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: 192.168.124.132
+      registry: 192.168.144.132
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
