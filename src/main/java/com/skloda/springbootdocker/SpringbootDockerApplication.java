@@ -25,7 +25,7 @@ public class SpringbootDockerApplication {
 
     @GetMapping("/")
     public String hello() {
-        return "Spring Boot Hello World! Current Docker Container IP is : " + getIpByEthNum();
+        return "Spring Boot Hello World!!!!! Current Docker Container IP is : " + getIpByEthNum();
     }
 
     private String getIpByEthNum() {
