@@ -2,7 +2,7 @@ stages:
 - name: maven package
   steps:
   - runScriptConfig:
-      image: 192.168.144.144/base/maven-aliyun-springboot:1.0.0
+      image: 192.168.144.144/base/maven-aliyun-springboot:v1.0.1
       shellScript: mvn clean package -Dmaven.test.skip=true
   when:
     event: {}
