@@ -1,0 +1,32 @@
+{
+  "message": "",
+  "result": [
+    {
+      "id": 1,
+      "name": "科学搬砖组",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
+    },
+    {
+      "id": 2,
+      "name": "设计天团",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
+    },
+    {
+      "id": 3,
+      "name": "极客视界",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
+    },
+    {
+      "id": 4,
+      "name": "中二少女团",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
+    },
+    {
+      "id": 5,
+      "name": "程序员日常",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
+    }
+  ],
+  "status": 200,
+  "timestamp": "134087854103"
+}

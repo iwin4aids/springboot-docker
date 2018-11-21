@@ -1,0 +1,373 @@
+{
+  "message": "",
+  "result": {
+    "data": [
+      {
+        "id": "marketing",
+        "name": "营销管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "id": "member",
+        "name": "会员管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "id": "menu",
+        "name": "菜单管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "id": "order",
+        "name": "订单管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "id": "permission",
+        "name": "权限管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "id": "role",
+        "name": "角色管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "id": "test",
+        "name": "测试管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "id": "user",
+        "name": "用户管理",
+        "describe": null,
+        "status": 1,
+        "actionData": [
+          {
+            "action": "query",
+            "defaultCheck": false,
+            "describe": "查询"
+          },
+          {
+            "action": "get",
+            "defaultCheck": false,
+            "describe": "详情"
+          },
+          {
+            "action": "add",
+            "defaultCheck": false,
+            "describe": "新增"
+          },
+          {
+            "action": "update",
+            "defaultCheck": false,
+            "describe": "修改"
+          },
+          {
+            "action": "delete",
+            "defaultCheck": false,
+            "describe": "删除"
+          }
+        ],
+        "sptDaTypes": null,
+        "optionalFields": null,
+        "parents": null,
+        "type": null,
+        "deleted": 0,
+        "actions": [
+          "add",
+          "query",
+          "get",
+          "update",
+          "delete"
+        ]
+      }
+    ],
+    "pageSize": 10,
+    "pageNo": 0,
+    "totalPage": 1,
+    "totalCount": 5
+  },
+  "status": 200,
+  "timestamp": 1537082021471
+}
