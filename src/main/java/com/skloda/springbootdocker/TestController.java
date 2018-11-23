@@ -16,7 +16,9 @@ public class TestController {
     @GetMapping("/remote")
     public String remoteRequest() {
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://springboot-docker", String.class);
+        //服务端域名具有实时的服务发现能力
+        //Nginx的upstream中配置dns则会有解析缓存的问题存在，必须手动reload才能生效
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://springboot-docker:8080", String.class);
         return responseEntity.getBody();
     }
 }

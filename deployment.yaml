@@ -7,9 +7,9 @@ metadata:
     app: springboot-docker
 spec:
   ports:
-  - port: 80
+  - port: 8080
     protocol: TCP
-    targetPort: 80
+    targetPort: 8080
   selector:
     app: springboot-docker
   sessionAffinity: None
@@ -37,5 +37,5 @@ spec:
         imagePullPolicy: Always
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         ports:
-        - containerPort: 80
+        - containerPort: 8080
           protocol: TCP
