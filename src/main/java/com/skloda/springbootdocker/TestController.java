@@ -16,7 +16,7 @@ public class TestController {
     @GetMapping("/remote")
     public String remoteRequest() {
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://springboot-docker:8080", String.class);
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://springboot-docker", String.class);
         return responseEntity.getBody();
     }
 }
