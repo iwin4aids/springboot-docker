@@ -1,7 +1,9 @@
 package com.skloda.springbootdocker;
 
+import io.micrometer.core.instrument.Counter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +25,13 @@ public class SpringbootDockerApplication {
         SpringApplication.run(SpringbootDockerApplication.class, args);
     }
 
+    @Autowired
+    private Counter counter;
+
     @GetMapping("/")
     public String hello() {
+        // 自定义指标计数器
+        this.counter.increment();
         return "Spring Boot Hello World!!!!! Current Docker Container IP is : " + getIpByEthNum();
     }
 
@@ -49,4 +56,5 @@ public class SpringbootDockerApplication {
         }
         return "获取服务器IP错误";
     }
+
 }
