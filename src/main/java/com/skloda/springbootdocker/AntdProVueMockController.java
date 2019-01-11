@@ -18,13 +18,14 @@ public class AntdProVueMockController {
 
     /**
      * 直接读取mock数据文件返回
+     *
      * @param path 路径
      * @return json mock数据
      * @throws IOException
      */
     private String getMockData(String path) throws IOException {
         ClassPathResource resource = new ClassPathResource(path);
-        return IOUtils.toString(resource.getInputStream(),"UTF-8");
+        return IOUtils.toString(resource.getInputStream(), "UTF-8");
     }
 
     @PostMapping("/auth/login")
