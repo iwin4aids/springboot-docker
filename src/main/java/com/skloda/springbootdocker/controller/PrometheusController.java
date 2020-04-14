@@ -5,6 +5,7 @@ import io.micrometer.core.instrument.DistributionSummary;
 import io.micrometer.core.instrument.Gauge;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -59,10 +60,10 @@ public class PrometheusController {
         return "OK";
     }
 
-    @GetMapping("/summary")
-    public String summary() {
-        // 自定义指标计数器
-        myDistributionSummary.record(Math.random());
+    @GetMapping("/summary/{record}")
+    public String summary(@PathVariable("record") Long record) {
+        // 统计概要分布图
+        myDistributionSummary.record(record);
         return "OK";
     }
 }
