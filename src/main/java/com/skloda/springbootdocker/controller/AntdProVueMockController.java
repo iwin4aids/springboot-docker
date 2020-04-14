@@ -1,4 +1,4 @@
-package com.skloda.springbootdocker;
+package com.skloda.springbootdocker.controller;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.ClassPathResource;
@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 /**
  * @Author: jiangkun
@@ -25,7 +26,7 @@ public class AntdProVueMockController {
      */
     private String getMockData(String path) throws IOException {
         ClassPathResource resource = new ClassPathResource(path);
-        return IOUtils.toString(resource.getInputStream(), "UTF-8");
+        return IOUtils.toString(resource.getInputStream(), StandardCharsets.UTF_8);
     }
 
     @PostMapping("/auth/login")
